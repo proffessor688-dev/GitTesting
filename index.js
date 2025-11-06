@@ -2,8 +2,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => {
     return response.json();
   })
-  .then((data) => {
-    console.log("user Data", data);
+  .then((rawdata) => {
+    console.log("user Data", rawdata);
   })
   .catch((error) => {
     console.error(error);
